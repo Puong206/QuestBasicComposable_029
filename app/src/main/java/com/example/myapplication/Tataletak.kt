@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -43,5 +45,19 @@ fun TataletakBox(modifier: Modifier) {
         Text(text = "Row1")
         Text(text = "Box2")
         Text(text = "Column2")
+    }
+}
+
+@Composable
+fun TataletakColumnRow(modifier: Modifier) {
+    Column() {
+        //Baris 1
+        Row(modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly)
+        {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1"))
+        }
     }
 }
