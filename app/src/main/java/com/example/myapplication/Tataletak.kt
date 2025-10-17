@@ -68,7 +68,7 @@ fun TataletakColumnRow(modifier: Modifier) {
         {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
-            Text(text = "Komponen3Baris1"))
+            Text(text = "Komponen3Baris1")
         }
         //Baris 2
         Row(modifier = modifier.fillMaxWidth(),
